@@ -14,10 +14,10 @@ public class ProjectSecurityConfig {
 
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-
+        //csrf needs to be enabled , implementation karna hain .......
         http.csrf((csrf)-> csrf.disable())
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/about","/home","/register","/caption","/insta").permitAll()
+                        .requestMatchers("/about","/home","/register","/caption","/insta","/bot").permitAll()
                         .requestMatchers("/myAccount").authenticated())
                 .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults());
