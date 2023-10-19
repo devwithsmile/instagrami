@@ -1,4 +1,4 @@
-package com.spring_security_app.demo.DTO;
+package com.spring_security_app.demo.DTO.ChatGPT;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

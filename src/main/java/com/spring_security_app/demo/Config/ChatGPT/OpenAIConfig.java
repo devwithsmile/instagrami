@@ -1,4 +1,4 @@
-package com.spring_security_app.demo.Config;
+package com.spring_security_app.demo.Config.ChatGPT;
 
 
 import org.springframework.beans.factory.annotation.Value;
